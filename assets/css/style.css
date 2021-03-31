@@ -1,0 +1,29 @@
+body {
+  background: #F1FFFA;
+}
+
+.jumbotron {
+  background: #0C120C;
+}
+
+h1 {
+  color: #F1FFFA;
+}
+
+hr {
+  background-color:#F1FFFA;
+}
+
+.lead {
+  color: #F1FFFA
+}
+
+.btn-lg {
+  background-color: #0C120C;
+  color: #F1FFFA;
+}
+
+.btn-lg:hover {
+  background-color: #7B6D8D;
+}
+
