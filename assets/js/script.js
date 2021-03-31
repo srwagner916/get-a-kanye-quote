@@ -1,10 +1,8 @@
 var btnEl = document.querySelector("#quote-button");
 var cardColEl = document.querySelector("#card-col");
+var anotherBtnColEl = document.querySelector("#another-btn-col");
 
-
-
-
-
+//function to fetch quote from api
 var getQuote = function(){
   fetch("https://api.kanye.rest")
     .then(function(response) {
@@ -15,6 +13,7 @@ var getQuote = function(){
   });
 }
 
+// function to create card to display quote
 var displayQuote = function(data) {
   //remove button el
   btnEl.remove();
@@ -46,10 +45,7 @@ var displayQuote = function(data) {
   cardFooterEl.classList.add("blockquote-footer");
   cardFooterEl.innerHTML = "<cite title='Kanye'>Kanye</cite>";
   quoteEl.appendChild(cardFooterEl);
-
-  //create a button to get another one
-
-  var getAnotherBtnEl = document.createElement
 };
 
+// btn click event
 btnEl.addEventListener("click", getQuote);
